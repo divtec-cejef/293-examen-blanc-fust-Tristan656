@@ -19,15 +19,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 800px;
 }
 
 a {
     text-decoration: none;
     color: #ff8800;
 }
+a:hover {
+    color: #666;
+}
 
+header img {
+    max-height: 80px;
+}
+footer {
+    background: #151515;
+    color: #fff;
+    margin-top: 2rem;
+    padding: 20px 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+footer p {
+    max-width: 100%;
+}
 /********** STYLE HEADER *********/
 header {
     padding: 1rem;
@@ -78,6 +101,10 @@ main {
 .produits li {
     padding: 2% 1rem;
     transition: all 0.2s ease-in-out;
+    margin: 2px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 .produits li:hover {
@@ -99,4 +126,18 @@ main {
     text-align: center;
     margin: .5em 0 0;
     line-height: 1.1;
+    color: #ff8800;
+}
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.page-index aside ul li a {
+    color: #ff8800;
+}
+
+.page-index aside ul li a:hover {
+    color: #666;
 }
