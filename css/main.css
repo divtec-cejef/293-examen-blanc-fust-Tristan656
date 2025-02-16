@@ -95,7 +95,10 @@ main {
 /********** PAGE NOS PRODUITS *********/
 .produits {
     list-style-type: none;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .produits li {
@@ -103,8 +106,8 @@ main {
     transition: all 0.2s ease-in-out;
     margin: 2px;
     border: 3px solid black;
-    display: flex;
-    flex-direction: column;
+    flex-basis: calc(50% - 30px);
+    box-sizing: border-box;
 }
 
 .produits li:hover {
